@@ -7,4 +7,4 @@ Random (possibly non-existent) Japanese-sounding word generator.
 
 #### My socials
 - Telegram: https://meguroneko.t.me
-- X: https://x.com/meguroneko_
+- X: https://x.com/meguroneko_mv
