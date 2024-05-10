@@ -90,10 +90,20 @@ def randjap(
 
 
 if __name__ == "__main__":
+    count = None
+    while count is None:
+        try:
+            strcount = input("How many? ").strip()
+            count = int(strcount)
+        except ValueError:
+            print("Expected number, not", strcount)
+        except (KeyboardInterrupt, EOFError):
+            print("\nGoodbye! じゃあね!")
+            exit(0)
     try:
-        for _ in range(int(input("How many? "))):
-            print(randjap(), end=", ")
-        print("")
-    except Exception as exc:
-        print(f"[ERROR] {exc}")
-        print("")
+        for i in range(count):
+            if i != 0:
+                print(end=", ")
+            print(randjap(), end="")
+    except (KeyboardInterrupt, EOFError):
+        print("\nGoodbye! じゃあね!")
